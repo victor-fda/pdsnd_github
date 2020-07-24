@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+This project has started on **July 23th 2020**.
 
 ### Project Title
-Replace the Project Title
+**Explore US Bikeshare Data**
 
 ### Description
-Describe what your project is about and what it does
+This projects analyzes city´s data about bikesharing rides and give it back some rides and users information.
 
 ### Files used
-Include the files used
+* bikeshare.py
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Used websites for getting information and inspiration:
+* https://www.stackoverflow.com
+* https://www.geeksforgeeks.com
+* https://www.w3schools.com
