@@ -128,11 +128,11 @@ def station_stats(df):
 
     #Display most commonly used start station
     popular_start_station = df['Start Station'].mode()[0]
-    print("\nThe most popular Start Station was {}".format(popular_start_station))
+    print("\nThe most popular Start Station for a ride was {}".format(popular_start_station))
 
     #Display most commonly used end station
     popular_end_station = df['End Station'].mode()[0]
-    print("\nThe most popular End Station was {}".format(popular_end_station))
+    print("\nThe most popular End Station for a ride was {}".format(popular_end_station))
 
     #Display most frequent combination of start station and end station trip
     #Concatenate Start and End Station to create a unique value
@@ -143,7 +143,7 @@ def station_stats(df):
 
     #split again to get their parts
     combination_split = most_common_combination.split(" - ")
-    print("\n Thes most common frequent combination of station on the period is: Start Station, {} and End Station, {}  ".format(combination_split[0],combination_split[1]))
+    print("\n Thes most common frequent station combination on the period is: Start Station, {} and End Station, {}  ".format(combination_split[0],combination_split[1]))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -158,11 +158,11 @@ def trip_duration_stats(df):
 
     #Display total travel time
     total_trip_duration = df['Trip Duration'].sum(axis=0)
-    print("\nThe total trip duration of the selected period was {} min".format(total_trip_duration/60))
+    print("\nThe total trip duration on the selected period was {} min".format(total_trip_duration/60))
 
     #Display mean travel time
     mean_trip_duration = df['Trip Duration'].mean(axis=0)
-    print("\nThe mean trip duration of the selected period was {} min".format(mean_trip_duration/60))
+    print("\nThe mean trip duration on the selected period was {} min".format(mean_trip_duration/60))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
