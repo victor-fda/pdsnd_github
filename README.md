@@ -2,7 +2,7 @@
 This project has started on **July 23th 2020**.
 
 ### Project Title
-**Explore US Bikeshare Data**
+**Explore US Bikeshare Data** using Python
 
 ### Description
 This projects analyzes city´s data about bikesharing rides and give it back some rides and users information.
